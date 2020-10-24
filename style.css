@@ -44,3 +44,24 @@
 .header .section.left #logo {
     margin-top: 5px;
 }
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary);
+    border-top: var(--outline);
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1 auto;
+
+    text-decoration: none;
+}

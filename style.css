@@ -33,11 +33,13 @@
     background-color: var(--secondary);
     border-bottom: 1px solid var(--outline);
 }
+
 .header .section {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .header .section svg:not(:first-child) {
     margin-left: 15px;
 }
@@ -52,15 +54,15 @@
 
     display: flex;
     flex-direction: row;
+
     background-color: var(--secondary);
-    border-top: var(--outline);
+    border-top: 1px solid var(--outline);
 }
 
 .navbar a {
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex: 1 auto;
 
     text-decoration: none;

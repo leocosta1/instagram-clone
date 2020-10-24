@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+/* Reset CSS */
 * { box-sizing: border-box;
     margin: 0;
     padding: 0; }
@@ -8,11 +9,38 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Colors */
 :root {
-    --primary: #000000;
-    --secondary: #121212;
-    --outline: #262626;
-    --symbol: #FFFFFF;
+    --primary: #FFFFFF;
+    --secondary: #FAFAFA;
+    --outline: #B3B3B3;
+    --symbol: #000000;
     --like: #ED4756;
     --link: #3898F3;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 16px;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--outline);
+}
+.header .section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header .section svg:not(:first-child) {
+    margin-left: 15px;
+}
+.header .section.left #logo {
+    margin-top: 5px;
 }

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+*, button, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: #000000;
+    --secondary: #121212;
+    --outline: #262626;
+    --symbol: #FFFFFF;
+    --like: #ED4756;
+    --link: #3898F3;
+}

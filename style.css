@@ -100,11 +100,16 @@ html, body {
 .content .stories .story .img {
     width: 56px;
     height: 56px;
+    overflow: hidden;
 
     border-radius: 50%;
     border: 1px solid var(--outline);
 
     margin-bottom: 8px;
+}
+.content .stories .story .img img {
+    width: 100%;
+    height: 100%;
 }
 
 .content .stories .story span {

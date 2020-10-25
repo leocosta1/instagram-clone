@@ -11,8 +11,14 @@
 
 html, body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 1fr 45px;
+    grid-template-areas:
+    'h'
+    'c'
+    'n';
 }
 
 /* Colors */
@@ -29,7 +35,8 @@ html, body {
 /* Header */
 .header {
     width: 100%;
-    height: 45px;
+    height: 100%;
+    grid-area: h;
 
     display: flex;
     flex-direction: row;
@@ -56,9 +63,13 @@ html, body {
 
 /* Main Content */
 .content {
+    width: 100%;
+    height: 100%;
+    grid-area: c;
+    overflow: auto;
+
     display: flex;
     flex-direction: column;
-    flex: 1 auto;
 
     background-color: var(--primary);
 }
@@ -69,6 +80,7 @@ html, body {
 
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
     align-items: center;
 
     padding: 0 18px;
@@ -126,7 +138,8 @@ html, body {
 /* Navbar */
 .navbar {
     width: 100%;
-    height: 45px;
+    height: 100%;
+    grid-area: n;
 
     display: flex;
     flex-direction: row;

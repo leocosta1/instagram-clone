@@ -75,13 +75,23 @@ html, body {
     background-color: var(--secondary);
     border-bottom: 1px solid var(--outline);
 }
+.content .stories::-webkit-scrollbar {
+    display: none;
+}
 
 .content .stories .story {
-    width: 65px;
+    width: 64px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 0 auto;
+
+    background: 0 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
 }
 .content .stories .story:not(:first-child) {
     margin-left: 15px;
@@ -100,8 +110,9 @@ html, body {
 .content .stories .story span {
     font-size: 12px;
     text-align: center;
+    color: var(--symbols);
 
-    width: 60px;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

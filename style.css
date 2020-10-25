@@ -9,12 +9,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Colors */
 :root {
     --primary: #FFFFFF;
     --secondary: #FAFAFA;
     --outline: #B3B3B3;
-    --symbol: #000000;
+    --texts: #000000;
+    --symbols: #262626;
     --like: #ED4756;
     --link: #3898F3;
 }
@@ -45,6 +52,59 @@
 }
 .header .section.left #logo {
     margin-top: 5px;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+
+    background-color: var(--primary);
+}
+
+.content .stories {
+    height: 105px;
+    overflow-x: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 18px;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--outline);
+}
+
+.content .stories .story {
+    width: 65px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .stories .story:not(:first-child) {
+    margin-left: 15px;
+}
+
+.content .stories .story .img {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    border: 1px solid var(--outline);
+
+    margin-bottom: 8px;
+}
+
+.content .stories .story span {
+    font-size: 12px;
+    text-align: center;
+
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* Navbar */

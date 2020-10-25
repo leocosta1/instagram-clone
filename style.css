@@ -85,7 +85,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 0 auto;
+    flex-shrink: 0;
 
     background: 0 0;
     margin: 0;

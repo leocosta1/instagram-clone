@@ -97,7 +97,7 @@ html, body {
     margin-left: 15px;
 }
 
-.content .stories .story .img {
+.content .stories .story .avatar {
     width: 56px;
     height: 56px;
     overflow: hidden;
@@ -107,7 +107,7 @@ html, body {
 
     margin-bottom: 8px;
 }
-.content .stories .story .img img {
+.content .stories .story .avatar img {
     width: 100%;
     height: 100%;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <title>Instagram Clone</title>
@@ -28,7 +28,7 @@
                     <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 0C4.36522 0 0 4.36522 0 9.75C0 15.1348 4.36522 19.5 9.75 19.5C11.9167 19.5 13.9184 18.7932 15.537 17.5976L15.7197 17.7803L20.2197 22.2803L20.75 22.8107L21.8107 21.75L21.2803 21.2197L16.7803 16.7197L16.6746 16.6139C18.4212 14.8519 19.5 12.427 19.5 9.75C19.5 4.36522 15.1348 0 9.75 0ZM1.5 9.75C1.5 5.19365 5.19365 1.5 9.75 1.5C14.3063 1.5 18 5.19365 18 9.75C18 14.3063 14.3063 18 9.75 18C5.19365 18 1.5 14.3063 1.5 9.75Z" fill="black"/>
                     </svg>
-                    <input id="search" type="text" placeholder="Pesquisar">
+                    <input id="search" type="text" placeholder="Search">
                 </div>
             </div>
             <div class="section right">
@@ -64,33 +64,45 @@
     <main class="content">
         <div class="stories">
             <button class="story">
-                <div class="avatar"></div>
-                <span>Usuário 1</span>
+                <div class="avatar">
+                    <img src="images/stories/user1.jpg" alt="User">
+                </div>
+                <span>torvalds</span>
             </button>
 
             <button class="story">
-                <div class="avatar"></div>
-                <span>Usuário 2</span>
+                <div class="avatar">
+                    <img src="images/stories/user2.jpg" alt="User">
+                </div>
+                <span>alan.turing</span>
             </button>
 
             <button class="story">
-                <div class="avatar"></div>
-                <span>Usuário 3</span>
+                <div class="avatar">
+                    <img src="images/stories/user3.jpg" alt="User">
+                </div>
+                <span>bill_gates</span>
             </button>
 
             <button class="story">
-                <div class="avatar"></div>
-                <span>Usuário 4</span>
+                <div class="avatar">
+                    <img src="images/stories/user4.jpg" alt="User">
+                </div>
+                <span>woz</span>
             </button>
 
             <button class="story">
-                <div class="avatar"></div>
-                <span>Usuário 5</span>
+                <div class="avatar">
+                    <img src="images/stories/user5.jpg" alt="User">
+                </div>
+                <span>dennis-ritchie</span>
             </button>
 
             <button class="story">
-                <div class="avatar"></div>
-                <span>Usuário 6</span>
+                <div class="avatar">
+                    <img src="images/stories/user6.jpg" alt="User">
+                </div>
+                <span>davegrohl</span>
             </button>
         </div>
 
@@ -98,9 +110,9 @@
             <div class="post-top">
                 <div class="profile">
                     <div class="avatar">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8FuEJbKwDdaz1h387130xmYkAIQbZpahhbQ&usqp=CAU" alt="Perfil">
+                        <img src="images/posts/post1/default-user.png" alt="Profile">
                     </div>
-                    <a href="#">Usuário</a>
+                    <a href="https://github.com/leocosta1" target="_blank">leocosta1</a>
                 </div>
                 <button>
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +121,7 @@
                 </button>
             </div>
             <div class="post-media">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Post">
+                <img src="images/posts/post1/image.png" alt="Post">
             </div>
             <div class="post-bottom">
                 <div class="buttons">
@@ -128,9 +140,9 @@
                         <path d="M9.1994 14.7527L2.19395 21.6439C1.61482 22.1061 0.75 21.6953 0.75 20.947V1.09345C0.75 0.903767 0.903766 0.75 1.09345 0.75H17.9066C18.0962 0.75 18.25 0.903766 18.25 1.09345V20.8361C18.25 21.5941 17.3658 22.0016 16.7903 21.5203L10.2647 14.7663L9.73889 14.222L9.1994 14.7527Z" stroke="black" stroke-width="1.5"/>
                     </svg>
                 </div>
-                <span class="likes">Curtido por <a href="#">fulaninho-de-taaal</a> e <strong>outras 1.312.200 pessoas</strong></span>
-                <p class="desc"><a href="#">leo_rizzocosta</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, fugit sit. Adipisci suscipit quo, quis doloremque a dolores fugit veniam. Ipsam quam ullam voluptate earum atque quas, tenetur a fuga.</p>
-                <span class="time">Há 10 horas</span>
+                <span class="likes">Liked by <a href="#">mom</a> and <strong>73 others</strong></span>
+                <p class="desc"><a href="https://github.com/leocosta1" target="_blank">leocosta1</a> Responsive clone of Instagram UI. Made with love, for study purposes. ❤</p>
+                <span class="time">30 minutes ago</span>
             </div>
         </div>
 
@@ -138,9 +150,9 @@
             <div class="post-top">
                 <div class="profile">
                     <div class="avatar">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQEZrATmgHOi5ls0YCCQBTkocia_atSw0X-Q&usqp=CAU" alt="Perfil">
+                        <img src="images/posts/post2/einstein.png" alt="Profile">
                     </div>
-                    <a href="#">Usuário</a>
+                    <a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">einstein_</a>
                 </div>
                 <button>
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +161,7 @@
                 </button>
             </div>
             <div class="post-media">
-                <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" alt="Post">
+                <img src="images/posts/post2/black-hole.jpg" alt="Post">
             </div>
             <div class="post-bottom">
                 <div class="buttons">
@@ -168,9 +180,9 @@
                         <path d="M9.1994 14.7527L2.19395 21.6439C1.61482 22.1061 0.75 21.6953 0.75 20.947V1.09345C0.75 0.903767 0.903766 0.75 1.09345 0.75H17.9066C18.0962 0.75 18.25 0.903766 18.25 1.09345V20.8361C18.25 21.5941 17.3658 22.0016 16.7903 21.5203L10.2647 14.7663L9.73889 14.222L9.1994 14.7527Z" stroke="black" stroke-width="1.5"/>
                     </svg>
                 </div>
-                <span class="likes">Curtido por <a href="#">fulaninho-de-taaal</a> e <strong>outras 1.312.200 pessoas</strong></span>
-                <p class="desc"><a href="#">leo_rizzocosta</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, fugit sit. Adipisci suscipit quo, quis doloremque a dolores fugit veniam. Ipsam quam ullam voluptate earum atque quas, tenetur a fuga.</p>
-                <span class="time">Há 10 horas</span>
+                <span class="likes">Liked by <a href="https://en.wikipedia.org/wiki/Isaac_Newton" target="_blank">newton</a> and <strong>112.534 other</strong></span>
+                <p class="desc"><a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">einstein_</a> Interstellar. The best movie. I was right all the time.</p>
+                <span class="time">10 hours ago</span>
             </div>
         </div>
     </main>

@@ -21,13 +21,16 @@ html, body {
     'n';
 }
 
+svg {
+    fill: var(--text);
+}
+
 /* Colors */
 :root {
     --primary: #FFFFFF;
     --secondary: #FAFAFA;
     --outline: #B3B3B3;
-    --texts: #000000;
-    --symbols: #262626;
+    --text: #262626;
     --like: #ED4756;
     --link: #3898F3;
 }
@@ -76,7 +79,9 @@ html, body {
 }
 .header #logo {
     margin-top: 5px;
+    fill: var(--text);
 }
+
 .header .search-bar {
     width: 215px;
     height: 25px;
@@ -87,6 +92,7 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
 .header .search-bar #search {
     width: 100%;
     height: 100%;
@@ -107,6 +113,7 @@ html, body {
     width: 12px;
     height: 12px;
 
+    fill: #8E8E8E;
     position: absolute;
     top: 7px; left: 7px;
 }
@@ -182,7 +189,7 @@ html, body {
 .content .stories .story span {
     font-size: 12px;
     text-align: center;
-    color: var(--symbols);
+    color: var(--text);
 
     text-decoration: none;
     text-transform: lowercase;
@@ -233,7 +240,7 @@ html, body {
 .content .post .post-top .profile a:link, a:visited {
     font-size: 14px;
     font-weight: 500;
-    color: var(--symbols);
+    color: var(--text);
 
     text-decoration: none;
     text-transform: lowercase;
@@ -287,7 +294,7 @@ html, body {
     margin-bottom: 8px;
 
     font-size: 14px;
-    color: var(--symbols);
+    color: var(--text);
 }
 .content .post .post-bottom .likes a, strong {
     font-weight: 600;
@@ -296,7 +303,7 @@ html, body {
 
 .content .post .post-bottom .desc {
     font-size: 14px;
-    color: var(--symbols);
+    color: var(--text);
 
     margin-bottom: 14px;
 }
@@ -340,6 +347,10 @@ html, body {
 
 /* Media Queries */
 @media (min-width: 605px) {
+    body {
+        background-color: var(--primary);
+    }
+
     .header .section.left #logo {
         display: none;
     }
@@ -380,6 +391,7 @@ html, body {
         'h'
         'c'
         'c';
+        background-color: var(--primary);
     }
 
     .header .container {

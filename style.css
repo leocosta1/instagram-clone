@@ -58,7 +58,7 @@ html, body {
 .header .section svg:not(:first-child) {
     margin-left: 15px;
 }
-.header .section.left #logo {
+.header #logo {
     margin-top: 5px;
 }
 
@@ -287,4 +287,24 @@ html, body {
     flex: 1 auto;
 
     text-decoration: none;
+}
+
+
+/* Media Queries */
+@media (min-width: 605px) {
+    .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 18px 0 0;
+    }
+    .content .stories {
+        border: 1px solid var(--outline);
+        border-radius: 3px;
+
+        margin-bottom: 20px;
+    }
+    .content .post {
+        border: 1px solid var(--outline);
+        border-radius: 3px;
+    }
 }

@@ -323,6 +323,7 @@ svg {
 .content .post .post-bottom .likes a, strong {
     font-weight: 600;
     text-decoration: none;
+    color: var(--text);
 }
 
 .content .post .post-bottom .desc {
@@ -335,6 +336,7 @@ svg {
 .content .post .post-bottom .desc a {
     font-weight: 600;
     text-decoration: none;
+    color: var(--text);
 }
 
 .content .post .post-bottom .time {

@@ -210,7 +210,7 @@ svg {
     height: 100%;
 }
 
-.content .stories .story span {
+.content .stories .story .name {
     font-size: 12px;
     text-align: center;
     color: var(--text);

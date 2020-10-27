@@ -26,6 +26,14 @@ svg {
 }
 
 /* Colors */
+:root.darkMode {
+    --primary: #000000;
+    --secondary: #121212;
+    --outline: #262626;
+    --text: #B3B3B3;
+    --like: #ED4756;
+    --link: #3898F3;
+}
 :root {
     --primary: #FFFFFF;
     --secondary: #FAFAFA;
@@ -72,14 +80,28 @@ svg {
 }
 .header .section.right .desktop {
     display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.header .section.right .mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .header .section svg:not(:first-child) {
-    margin-left: 15px;
+    margin-left: 12px;
 }
 .header .logo {
     margin-top: 5px;
     fill: var(--text);
+}
+.header #btnTheme {
+    fill: none;
+    stroke: var(--text);
+    margin-bottom: 1.5px;
 }
 
 .header .search-bar {
@@ -304,7 +326,6 @@ svg {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
 
     margin-bottom: 8px;
 }

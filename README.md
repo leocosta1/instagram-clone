@@ -1,4 +1,4 @@
-﻿# Instagram Clone
+# Instagram Clone
 
 > Responsive Instagram UI Clone
 
@@ -6,17 +6,20 @@ This project is a clone of the [Instagram](https://instagram.com). I made it to 
 
 - **[Live Version](https://leocosta1.github.io/instagram-clone/)**
 
-## Improved Skills
+## 🤓 Improved Skills
 
 - HTML:
   - Layout (Grid, Flebox);
   - Positioning;
+  - Containers;
+  - Semantic;
   - Responsiveness;
 - CSS;
-- SVG;
-- UI Principles;
+  - Media Queries;
+  - Light and Dark Theme;
+  - SVG usage;
 
-## ToDo
+## ✅ ToDo
 
 - [ ] Improve the icons and button.
 - [ ] Gradient on stories border.

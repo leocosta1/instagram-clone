@@ -23,6 +23,19 @@ html, body {
 
 svg {
     fill: var(--text);
+    display: block;
+}
+
+button {
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    width: fit-content;
+    height: fit-content;
 }
 
 /* Colors */
@@ -91,17 +104,16 @@ svg {
     justify-content: center;
 }
 
-.header .section svg:not(:first-child) {
+.header .section button:not(:first-child) {
     margin-left: 12px;
 }
 .header .logo {
     margin-top: 5px;
     fill: var(--text);
 }
-.header #btnTheme {
+.header #btnTheme svg {
     fill: none;
     stroke: var(--text);
-    margin-bottom: 1.5px;
 }
 
 .header .search-bar {
@@ -205,13 +217,6 @@ svg {
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-
-    background: 0 0;
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    outline: 0;
 }
 .content .stories .story:not(:first-child) {
     margin-left: 15px;
@@ -283,7 +288,7 @@ svg {
     height: 100%;
 }
 
-.content .post .post-top .profile a:link, a:visited {
+.content .post .post-top .profile a:link, .content .post .post-top .profile a:visited {
     font-size: 14px;
     font-weight: 500;
     color: var(--text);
@@ -330,7 +335,7 @@ svg {
     margin-bottom: 8px;
 }
 
-.content .post .post-bottom .buttons > div > svg:not(:last-child) {
+.content .post .post-bottom .buttons > div > button:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -341,7 +346,8 @@ svg {
     font-size: 14px;
     color: var(--text);
 }
-.content .post .post-bottom .likes a, strong {
+.content .post .post-bottom .likes a:link, .content .post .post-bottom .likes a:visited,
+.content .post .post-bottom .likes strong {
     font-weight: 600;
     text-decoration: none;
     color: var(--text);
@@ -354,7 +360,7 @@ svg {
     margin-bottom: 14px;
 }
 
-.content .post .post-bottom .desc a {
+.content .post .post-bottom .desc a:link, .content .post .post-bottom .desc a:visited {
     font-weight: 600;
     text-decoration: none;
     color: var(--text);
@@ -434,7 +440,7 @@ svg {
     display: flex;
     flex-direction: column;
 }
-.sidebar a:link, a:visited {
+.sidebar a:link, .sidebar a:visited {
     font-size: 14px;
     font-weight: bold;
     color: var(--text);
@@ -465,7 +471,7 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 auto;
+    flex: 1 0 auto;
 
     text-decoration: none;
 }
@@ -483,7 +489,7 @@ svg {
         display: none;
     }
 
-    section {
+    .page section {
         max-width: 600px;
         padding: 30px 0 0 0;
         margin: 0 auto;
@@ -540,14 +546,14 @@ svg {
     .header .section.right .mobile {
         display: none;
     }
-    .header .section svg:not(:first-child) {
+    .header .section button:not(:first-child) {
         margin-left: 20px;
     }
 
     .page {
         background-color: var(--secondary);
     }
-    section {
+    .page section {
         max-width: 975px;
         margin: 0 auto;
     }

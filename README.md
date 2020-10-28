@@ -25,8 +25,12 @@ This project is a clone of the [Instagram](https://instagram.com). I made it to 
 ## ✅ ToDo
 
 - [x] Finish the Dark Theme.
-- [ ] Improve the icons and button.
+- [x] Improve the icons and button.
 - [ ] Gradient on stories border.
+
+## 🐛 Known Bugs
+
+- Apparently on mobile devices, the top and bottom bars do not remain fixed. If anyone knows how to solve, help me, because in DevTools of Chrome everything works fine.
 
 ## ⚙ Dev Setup (VS Code)
 

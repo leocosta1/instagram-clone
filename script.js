@@ -8,30 +8,31 @@ const moon = document.getElementById('moon');
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme == 'dark') {
     document.documentElement.classList.add('darkMode');
-    sun.style.display = 'initial';
+    sun.style.display = 'block';
     moon.style.display = 'none';
 }
 else {
+    document.documentElement.classList.remove('darkMode');
     sun.style.display = 'none';
-    moon.style.display = 'initial';
+    moon.style.display = 'block';
 }
 
 
 //  Switch Theme
 btnTheme.addEventListener('click', () => {
-    let theme = 'light';
+    let theme;
     document.documentElement.classList.toggle('darkMode');
 
     // Save Theme on localStorage
     if(document.documentElement.classList.contains('darkMode')) {
         theme = 'dark';
-        sun.style.display = 'initial';
+        sun.style.display = 'block';
         moon.style.display = 'none';
     }
     else {
         theme = 'light';
         sun.style.display = 'none';
-        moon.style.display = 'initial';
+        moon.style.display = 'block';
     }
 
     localStorage.setItem('theme', theme);

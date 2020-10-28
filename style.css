@@ -277,6 +277,7 @@ button {
     width: 44px;
     height: 44px;
     overflow: hidden;
+    flex-shrink: 0;
 
     border-radius: 50%;
     border: 1px solid var(--outline);

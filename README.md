@@ -31,7 +31,8 @@ This project is a clone of the [Instagram](https://instagram.com). I made it to 
 ## 🐛 Known Bugs
 
 - ~~Apparently on mobile devices, the top and bottom bars do not remain fixed~~.
-  - Obs.: I fixed this bug, switching from **grid** to **flex** and ``position: fixed;`` on the bars. But still some bugs on page scroll. If anyone knows how to solve, help me, because in DevTools of Chrome everything works fine, even with the ``display: grid;``.
+  - ~~Obs.: I fixed this bug, switching from **grid** to **flex** and ``position: fixed;`` on the bars. But still some bugs on page scroll. If anyone knows how to solve, help me, because in DevTools of Chrome everything works fine, even with the ``display: grid;``.~~
+  - Obs².: I think I just solved the problem, but I'm not sure ... Any feedback it would be great!
 
 ## ⚙ Dev Setup (VS Code)
 

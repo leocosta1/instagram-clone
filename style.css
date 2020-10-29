@@ -10,11 +10,10 @@
 }
 
 html, body {
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 svg {
@@ -152,8 +151,9 @@ button {
 /* Main Content */
 .page {
     width: 100%;
-    height: calc(100% - 90px);
+    height: 100%;
     overflow: auto;
+    margin: 45px 0;
 
     display: flex;
     flex-direction: row;
@@ -512,10 +512,6 @@ button {
 }
 
 @media (min-width: 1024px) {
-    body {
-        justify-content: flex-end;
-    }
-
     .header {
         background-color: var(--primary);
     }
@@ -547,7 +543,7 @@ button {
 
     .page {
         background-color: var(--secondary);
-        height: calc(100% - 45px);
+        margin: 45px 0 0 0;
     }
     .page section {
         max-width: 975px;

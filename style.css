@@ -131,6 +131,8 @@ button {
     border: 1px solid var(--outline);
     border-radius: 3px;
 
+    color: var(--text);
+
     outline: none;
     text-align: center;
 }

@@ -2,31 +2,29 @@
 
 > Responsive Instagram UI Clone
 
-This project is a clone of the [Instagram](https://instagram.com). I made it to study and improve my skills with HTML and CSS, and learn new concepts, like layouts, responsivity, themes and localStorage. Any feedback is very welcome! I'm a begginer in web development, so leave your opinions and suggestions, or any advice to improve and fix something i made wrong.
+This project is a clone of the [Instagram UI](https://instagram.com). I made it to study and improve my skills with HTML and CSS, and learn new concepts, like layouts, responsiveness, positioning and some JS concepts. Any feedback, opinions or suggestions is very welcome!
 
-- **[Live Version](https://leocosta1.github.io/instagram-clone/)**
+The latest update includes some nice new features, such as the gradient border and scroll buttons in stories, and the possibility to add more than one media to the post content, plus, of course, a major overhaul of the UI design!
+
+- **[Live Preview](https://leocosta1.github.io/instagram-clone/)**
 
 ## 🤓 Improved Skills
 
-- HTML:
-  - Layout (Flebox);
-  - Positioning;
-  - Containers;
-  - Semantic;
-  - Responsivity;
-- CSS:
-  - Media Queries;
-  - Light and Dark Theme;
-  - SVG usage;
-- JS:
-  - Events;
-  - LocalStorage;
+- Layout (Flexbox);
+- Positioning;
+- Semantic HTML;
+- Responsiveness (Media Queries, Relative Lengths);
+- Light/Dark Theme;
+- BEM Methodology;
+- SVG Usage;
+- Events;
+- LocalStorage;
+- Scroll Snapping;
+- Intersection Observer;
 
 ## ✅ ToDo
 
-- [x] ~~Finish the Dark Theme.~~
-- [x] ~~Improve the icons and button.~~
-- [ ] Gradient on stories border.
+- [ ] Refactor CSS (Add SASS).
 
 ## ⚙ Dev Setup (VS Code)
 

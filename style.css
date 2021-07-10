@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 /* CSS Reset */
-* { box-sizing: border-box;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+}
 
 *, button, input, select, textarea {
     font-family: 'Roboto', sans-serif;
@@ -23,6 +27,9 @@
 
     --like: hsl(355, 82%, 61%);
     --link: hsl(204, 100%, 48%);
+
+    --header-height: 44px;
+    --nav-height: 44px;
 }
 :root.darkTheme {
     --primary: hsl(0, 0%, 0%);
@@ -34,20 +41,17 @@
 
     --text-dark: hsl(0, 0%, 98%);
     --text-light: hsl(0, 0%, 60%);
-
-    --like: hsl(355, 82%, 61%);
-    --link: hsl(204, 100%, 48%);
 }
 
 /* -------------------------------------------------- */
 
 /* General Styles */
-html,
 body {
-    height: 100%;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 svg { display: block; }
@@ -59,14 +63,15 @@ img { max-width: 100%; }
 /* Header Navbar */
 .header {
     width: 100%;
-    height: 44px;
+    height: var(--header-height);
     background-color: var(--primary);
 
     display: flex;
     justify-content: center;
 
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 2;
 }
 .header::after {
     content: '';
@@ -158,12 +163,13 @@ img { max-width: 100%; }
 /* Bottom Navbar */
 .navbar {
     width: 100%;
-    height: 44px;
+    height: var(--nav-height);
     background-color: var(--primary);
 
     display: flex;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    bottom: 0; left: 0;
+    z-index: 2;
 }
 .navbar::after {
     content: '';
@@ -193,14 +199,18 @@ img { max-width: 100%; }
 .main-container {
     background-color: var(--primary);
 
+    margin-top: var(--header-height);
+    margin-bottom: var(--nav-height);
+
     display: flex;
     flex: 1;
-    overflow-y: auto;
 }
 
 .content-container {
     width: 100%;
     max-width: 935px;
+
+    padding: 0 0 8px;
 
     margin: 0 auto;
     display: flex;
@@ -271,7 +281,7 @@ img { max-width: 100%; }
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 1;
 }
 .stories__left-button {
     left: 10px;
@@ -358,9 +368,6 @@ img { max-width: 100%; }
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
-.post:last-child {
-    margin-bottom: 8px;
 }
 
 .post__header {
@@ -531,7 +538,7 @@ img { max-width: 100%; }
     max-width: 290px;
     position: fixed;
     left: 50%; top: 84px;
-    transform: translateX(calc(-50% + 310px));
+    transform: translateX(calc(-50% + 322px));
 
     display: none;
     flex-direction: column;
@@ -780,11 +787,16 @@ img { max-width: 100%; }
     .header__buttons--desktop {
         display: none;
     }
+
+    /* Fix post medias indicators bugs on mobile */
+    .post__medias {
+        gap: 1px;
+    }
 }
 
 @media (min-width: 620px) {
     .content-container {
-        padding-top: 30px;
+        padding: 30px 0 24px;
     }
 
     .content {
@@ -802,9 +814,6 @@ img { max-width: 100%; }
     .posts {
         gap: 24px;
     }
-    .post:last-child {
-        margin-bottom: 24px;
-    }
     .post {
         border: 1px solid var(--border);
         border-radius: 4px;
@@ -818,8 +827,9 @@ img { max-width: 100%; }
 }
 
 @media (min-width: 768px) {
-    .header {
-        height: 54px;
+    :root {
+        --header-height: 54px;
+        --nav-height: 0px;
     }
 
     .header__content {
@@ -840,10 +850,6 @@ img { max-width: 100%; }
 }
 
 @media (min-width: 1024px) {
-    .header__content {
-        margin-right: var(--scrollbar-width); /* Adding margin with scrollbar-width to align the content */
-    }
-
     .main-container {
         background-color: var(--secondary);
     }

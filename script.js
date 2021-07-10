@@ -6,16 +6,6 @@ const storiesRightButton = document.querySelector('.stories__right-button');
 const posts = document.querySelectorAll('.post');
 const postsContent = document.querySelectorAll('.post__content');
 
-// Getting the scrollbar width to adjust the header alignment
-const content = document.querySelector('.main-container');
-const scrollbarWidth = content.offsetWidth - content.clientWidth;
-// Setting the property when the page load
-document.onload = setScrollbarWidth(scrollbarWidth);
-function setScrollbarWidth(width) {
-    document.documentElement.style.setProperty('--scrollbar-width', `${width}px`);
-}
-
-
 // ===================================
 // DARK/LIGHT THEME
 // Set initial theme from LocalStorage
@@ -42,7 +32,6 @@ toggleThemeBtn.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
     }
 });
-
 
 // ===================================
 // STORIES SCROLL BUTTONS
@@ -72,7 +61,6 @@ if(window.matchMedia('(min-width: 1024px)').matches) {
     storiesObserver.observe(document.querySelector('.story:first-child'));
     storiesObserver.observe(document.querySelector('.story:last-child'));
 }
-
 
 // ===================================
 // POST MULTIPLE MEDIAS

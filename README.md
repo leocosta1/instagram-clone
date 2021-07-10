@@ -15,16 +15,16 @@ The latest update includes some nice new features, such as the gradient border a
 - Semantic HTML;
 - Responsiveness (Media Queries, Relative Lengths);
 - Light/Dark Theme;
-- BEM Methodology;
 - SVG Usage;
+- BEM Methodology;
+- Scroll Snapping;
 - Events;
 - LocalStorage;
-- Scroll Snapping;
 - Intersection Observer;
 
 ## ✅ ToDo
 
-- [ ] Refactor CSS (Add SASS).
+- [ ] Refactor CSS (Maybe add SASS).
 
 ## ⚙ Dev Setup (VS Code)
 
